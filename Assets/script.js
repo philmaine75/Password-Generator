@@ -44,7 +44,7 @@ return}
   if(numeric == "y"){
     alert("Your password will contain numbers")
   }
-   else if(numeric == n){
+   else if(numeric == "n"){
     alert("Your password will NOT contain numbers")
    }
    else{"Please ensure you select either 'y' or 'n'"
@@ -114,12 +114,11 @@ return}
     //var charset = lowerChars;
     var charset = "qwertyuiopasdfghjklzxcvbnm"
     var password = ""
-    for (var i = 0; i <= length; i++) {12
+    for (var i = 0; i <= length; i++) {
       var randomNumber = Math.floor(Math.random() * charset.length);
       password += charset.substring(randomNumber, randomNumber +1);
      }
      alert(password)
-    
 }
 else {alert("Please select at least one of the three types of characters")
 return
